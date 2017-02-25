@@ -1,2 +1,2 @@
-# mobileRobotSim
-2 Wheel Mobile Robot Simulation in MATLAB
+# Mobile-Robot
+An autonomous mobile robot
