@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sonic.bluetoothrc.MainActivity"
+    android:longClickable="false"
+    android:id="@+id/mainlayout"
+    android:background="@drawable/black_wood_background">
+
+    <RelativeLayout
+        android:id="@+id/bodyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menuLayout"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/leftrightlayout"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:id="@+id/lrButtonPlace"
+                android:background="@drawable/button_place_220x40"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentStart="false" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/lr_image"
+                android:background="@drawable/dark_button_60x60"
+                android:adjustViewBounds="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_marginStart="108dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:id="@+id/udlayout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="260dp"
+                android:id="@+id/udButtonPlace"
+                android:background="@drawable/button_place_220x40_vertical"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/ud_image"
+                android:background="@drawable/dark_button_60x60"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="95dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/powered_by"
+            android:id="@+id/poweredBy"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25sp"
+            android:textColor="#96ffffff"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/left_text"
+            android:id="@+id/lrLeftText"
+            android:textSize="35sp"
+            android:textColor="#cecece"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/lrRightText"
+            android:layout_alignLeft="@+id/leftrightlayout"
+            android:layout_alignStart="@+id/leftrightlayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backward_text"
+            android:id="@+id/udBackwardText"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#cecece"
+            android:layout_alignTop="@+id/udForwardText"
+            android:layout_toRightOf="@+id/udlayout"
+            android:layout_toEndOf="@+id/udlayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forward_text"
+            android:id="@+id/udForwardText"
+            android:textColor="#cecece"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/lrLeftText"
+            android:layout_alignLeft="@+id/udBackwardText"
+            android:layout_alignStart="@+id/udBackwardText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/right_text"
+            android:id="@+id/lrRightText"
+            android:textColor="#cecece"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/lrLeftText"
+            android:layout_alignStart="@+id/lrLeftText"
+            android:layout_marginTop="25sp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/beforeBrakeButton"
+            android:background="@drawable/warning_light_white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="10sp"
+            android:onClick="beforeBrakeButtonPressed" />
+
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/afterBrakeButton"
+            android:background="@drawable/warning_light_red"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="10sp"
+            android:visibility="invisible"
+            android:onClick="afterBrakeButtonPressed" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/menuLayout"
+        android:transitionGroup="false"
+        android:focusable="false">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backButtonBeforeClick"
+            android:background="@drawable/back_before_click_50x50"
+            android:onClick="backButton"
+            android:visibility="visible"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="8sp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backButtonAfterClick"
+            android:background="@drawable/back_button_after_click_50x50"
+            android:visibility="invisible"
+            android:layout_alignRight="@+id/backButtonBeforeClick"
+            android:layout_alignEnd="@+id/backButtonBeforeClick"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="8sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/connectToLayout"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/connectToText"
+                android:textColor="#cecece"
+                android:textAlignment="center"
+                android:layout_marginTop="5sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

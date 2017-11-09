@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BluetoothRC</string>
+    <string name="scan_button">SCAN</string>
+    <string name="bluetooth_situation">Bluetooth is not activated</string>
+    <string name="available_devices_text">Available Devices</string>
+    <string name="paired_devices_text">Paired Devices</string>
+    <string name="forward_text">Forward</string>
+    <string name="left_text">Left</string>
+    <string name="backward_text">Backward</string>
+    <string name="right_text">Right</string>
+    <!-- string for activity_select_controller.xml -->
+    <string name="select_controller">Select Controller</string>
+    <string name="joystick_text">Joystick</string>
+    <string name="accelerometer_text">Accelerometer</string>
+    <!-- string for activity_accelerator_controller.xml -->
+    <string name="accelerometer">Accelerometer</string>
+    <string name="powered_by">Powered by SnK</string>
+</resources>

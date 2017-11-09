@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abc_btn_borderless_material"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#717171">
+            <TextView
+                android:id="@+id/select_controller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/select_controller"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/joystick"
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:gravity="center"
+                android:text="@string/joystick_text"
+                android:textSize="30sp"
+                android:layout_marginLeft="-2sp"
+                android:layout_marginTop="-5sp"
+                android:layout_marginRight="-1sp"
+                android:onClick="joystickController" />
+
+            <Button
+                android:id="@+id/accelerometer"
+                android:layout_width="match_parent"
+                android:layout_height="75sp"
+                android:gravity="center"
+                android:text="@string/accelerometer_text"
+                android:textSize="30sp"
+                android:layout_marginLeft="-2sp"
+                android:layout_marginTop="-9sp"
+                android:layout_marginRight="-1sp"
+                android:onClick="accelerometerController" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
