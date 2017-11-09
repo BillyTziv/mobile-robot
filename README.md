@@ -4,7 +4,7 @@ This project was developed for the robotics course of Computer Science and Engin
 #Demo
 A simple demo can be found here: https://youtu.be/GVj5-OoE9Hc
 
-![alt text](https://github.com/BillyTziv/mobile-robot/mobile-robot-simulation.jpeg)
+![alt text](https://github.com/BillyTziv/mobile-robot/mobile-robot-simulation.jpg)
 
 #Contact
 For information about this projects, questions and possible collaboration, please contact me through my email at vtzivaras@gmail.com
